@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 193539710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 450d3cf59f1121b49b252af9eed3abbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f9e45dfa2f0fb0929e6bd4d471cf32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &193539713
@@ -290,8 +290,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_firstOverflowCharacterIndex: -1
@@ -491,7 +491,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5b2cda2a19e7de64da02c8892c688869, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80ddfb0e0dad80ceeb098533b36bc4da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1080,14 +1080,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 718437882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c678f98fd48326e4882c367a5b8346cd, type: 3}
+  m_Script: {fileID: 11500000, guid: f86c46ceabc73adc9be2bf1dc94e11ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textFieldOne: {fileID: 0}
   textFieldTwo: {fileID: 0}
   backgroundTextFieldOne: {fileID: 0}
   backgroundTextFieldTwo: {fileID: 0}
-  textInit: {fileID: 11400000, guid: 390f9af6a10edca4dab07bd9e01bd9c4, type: 2}
+  textInit: {fileID: 11400000, guid: f6f1b8468e9fb12b4b3899abfb5ad8b9, type: 2}
   videoPlayer: {fileID: 1020074057}
   quad: {fileID: 260040679}
   extraResourceButton: {fileID: 213971558}
@@ -1149,7 +1149,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a3ef0b5a790bbd44987718fda3c3598f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 851d9beb1fbf188239236cc0990c4ac4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1223,7 +1223,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a3ef0b5a790bbd44987718fda3c3598f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 851d9beb1fbf188239236cc0990c4ac4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1248413525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 450d3cf59f1121b49b252af9eed3abbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f9e45dfa2f0fb0929e6bd4d471cf32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1248413528
@@ -1627,7 +1627,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a3ef0b5a790bbd44987718fda3c3598f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 851d9beb1fbf188239236cc0990c4ac4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1756,7 +1756,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 29b88f6033b94d6489f472ead87011ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7096503bdebf1791d97495ee3c9cc662, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2182,11 +2182,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081584521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 074b349bad00a8d4b88c8e319c0d3c01, type: 3}
+  m_Script: {fileID: 11500000, guid: 462912854e3c54d84af7d3ee54c816b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   smallEducator: {fileID: 718437884}
-  toggleGroup: {fileID: 2081584524}
+  toggleGroup: {fileID: 0}
   questionField: {fileID: 463028108}
   submitButton: {fileID: 1807033947}
   backgroundMultipleChoiceQuestion: {fileID: 1430232218}
