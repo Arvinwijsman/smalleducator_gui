@@ -150,7 +150,7 @@ ILeafBehaviour textBehaviour = new VideoBehaviour(videoPlayer,
             else
             {
                 addMultipleChoiceQuestionnaire(slide.Question, positionOnTimeLineSeconds + 1.0f);
-                Debug.Log("Got question slide");
+                Debug.Log("Got question slide id: " + slide.Id);
             }
         }
     }
@@ -167,12 +167,7 @@ ILeafBehaviour textBehaviour = new VideoBehaviour(videoPlayer,
         var answers = new List<string>
         {
             "Yes",
-            "No",
-            "No..",
-            "Yes\nddddddddddddddddddddddsfsfsdf\ndfgdgdg",
-            "Yes\nddddddddddddddddddddddsfsfsdf\ndfgdgdg",
-            "No\nqwert\njyghf",
-            "No\nqwert\njyghf"
+            "No"
         };
 
         question.Answers = answers;
@@ -180,176 +175,141 @@ ILeafBehaviour textBehaviour = new VideoBehaviour(videoPlayer,
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
+        slide.Lines.Add("The architecture documentation should communicate the followings:");
+        slide.Lines.Add("\t1. A big problem divided into smaller manageables ones.");
+        slide.Lines.Add("\t2. Who is working on what and how to work together.");
+        slide.Lines.Add("\t3. Provides a vocabulary for talking about a complex ideas.");
+        slide.Lines.Add("\t4. The drives of the project.");
+        slide.Lines.Add("\t5. Helps with avoiding costly mistakes.");
+        slide.Lines.Add("\t6. It enables agility.");
 
-        var lines = new List<string>();
-        lines.Add("The architecture documentation should communicate the followings:");
-        lines.Add("\t1. A big problem divided into smaller manageables ones.");
-        lines.Add("\t2. Who is working on what and how to work together.");
-        lines.Add("\t3. Provides a vocabulary for talking about a complex ideas.");
-        lines.Add("\t4. The drives of the project.");
-        lines.Add("\t5. Helps with avoiding costly mistakes.");
-        lines.Add("\t6. It enables agility.");
-
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Diagrams with text helps to communicate the architecture.");
-        lines.Add("There are different notations.");
+        slide.Lines.Add("Diagrams with text helps to communicate the architecture.");
+        slide.Lines.Add("There are different notations.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Notations for architecture documentation");
-        lines.Add("The notation for documenting an architecture can be Informal, Semiformal or Formal.");
+        slide.Lines.Add("Notations for architecture documentation");
+        slide.Lines.Add("The notation for documenting an architecture can be Informal, Semiformal or Formal.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("The informal notation is often used during meetings");
-        lines.Add("or a discussion between software developers.");
-        lines.Add("The diagrams are drawn on a white board or paper.");
+        slide.Lines.Add("The informal notation is often used during meetings");
+        slide.Lines.Add("or a discussion between software developers.");
+        slide.Lines.Add("The diagrams are drawn on a white board or paper.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("The informal notation is great for brainstorming");
-        lines.Add("or for upfront design, but not for documenting an");
-        lines.Add("architecture.");
+        slide.Lines.Add("The informal notation is great for brainstorming");
+        slide.Lines.Add("or for upfront design, but not for documenting an");
+        slide.Lines.Add("architecture.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Don't use the informal notation when documenting the");
-        lines.Add("architecture for the lab assignment.");
+        slide.Lines.Add("Don't use the informal notation when documenting the");
+        slide.Lines.Add("architecture for the lab assignment.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("The semi-formal notation is often used for design.");
-        lines.Add("It is also used for discussion between software developers.");
-        lines.Add("The diagrams are drawn using the UML notation.");
+        slide.Lines.Add("The semi-formal notation is often used for design.");
+        slide.Lines.Add("It is also used for discussion between software developers.");
+        slide.Lines.Add("The diagrams are drawn using the UML notation.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("The semi-formal notation could be used for brainstorming");
-        lines.Add("or for upfront design, but it is mostly used");
-        lines.Add(" for documenting an architecture.");
+        slide.Lines.Add("The semi-formal notation could be used for brainstorming");
+        slide.Lines.Add("or for upfront design, but it is mostly used");
+        slide.Lines.Add(" for documenting an architecture.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Use the semi-formal notation when documenting the");
-        lines.Add("architecture for the lab assignment.");
+        slide.Lines.Add("Use the semi-formal notation when documenting the");
+        slide.Lines.Add("architecture for the lab assignment.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("The formal notation is used for design, but these projects");
-        lines.Add("are really large and takes years to development.");
-        lines.Add("The formal notations are architecture description languages.");
+        slide.Lines.Add("The formal notation is used for design, but these projects");
+        slide.Lines.Add("are really large and takes years to development.");
+        slide.Lines.Add("The formal notations are architecture description languages.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
+        
+        slide.Lines.Add("The formal notation is used for upfront design");
+        slide.Lines.Add("and it is used for documenting an architecture.");
 
-        lines.Add("The formal notation is used for upfront design");
-        lines.Add("and it is used for documenting an architecture.");
-
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Don't use the formal notation when documenting the");
-        lines.Add("architecture for the lab assignment.");
+        slide.Lines.Add("Don't use the formal notation when documenting the");
+        slide.Lines.Add("architecture for the lab assignment.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Views");
-        lines.Add("For step 6 we use views to describe the architecture.");
-        lines.Add("First we will look a the views according to the book Software Architecture in Practice,");
-        lines.Add("then view the views according to the book Applying UML and Patterns.");
+        slide.Lines.Add("Views");
+        slide.Lines.Add("For step 6 we use views to describe the architecture.");
+        slide.Lines.Add("First we will look a the views according to the book Software Architecture in Practice,");
+        slide.Lines.Add("then view the views according to the book Applying UML and Patterns.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
+        
+        slide.Lines.Add("Views");
+        slide.Lines.Add("“Thus, views let us divide the multidimensional entity that is a software");
+        slide.Lines.Add("architecture into a number of (we hope) interesting and manageable");
+        slide.Lines.Add("representations of the system. The concept of views gives us our most");
+        slide.Lines.Add("fundamental principle of architecture documentation:\n");
+        slide.Lines.Add("Documenting an architecture is a matter of documenting the relevant");
+        slide.Lines.Add("views and then adding documentation that applies to more than one view.”\n");
+        slide.Lines.Add("- Software Architecture in Practice");
 
-        lines.Add("Views");
-        lines.Add("“Thus, views let us divide the multidimensional entity that is a software");
-        lines.Add("architecture into a number of (we hope) interesting and manageable");
-        lines.Add("representations of the system. The concept of views gives us our most");
-        lines.Add("fundamental principle of architecture documentation:\n");
-        lines.Add("Documenting an architecture is a matter of documenting the relevant");
-        lines.Add("views and then adding documentation that applies to more than one view.”\n");
-        lines.Add("- Software Architecture in Practice");
-
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("”Module structures exist at design time.");
-        lines.Add("Module structures live on the file system and stick around");
-        lines.Add("even when the software is not running.”");
+        slide.Lines.Add("”Module structures exist at design time.");
+        slide.Lines.Add("Module structures live on the file system and stick around");
+        slide.Lines.Add("even when the software is not running.”");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("Design time is when program is being modelled and”");
-        lines.Add("it's code is being written.");
+        slide.Lines.Add("Design time is when program is being modelled and”");
+        slide.Lines.Add("it's code is being written.");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
         slide = new Slide();
         slide.Id = ++id;
-        lines.Clear();
 
-        lines.Add("”Component and connector, C&C, structures exist at runtime.");
-        lines.Add("Component and connector structures don’t exist when the");
-        lines.Add("software is not running.”");
+        slide.Lines.Add("”Component and connector, C&C, structures exist at runtime.");
+        slide.Lines.Add("Component and connector structures don’t exist when the");
+        slide.Lines.Add("software is not running.”");
 
-        slide.Lines = lines;
         lesson.Slides.Add(slide);
 
         return lesson;
