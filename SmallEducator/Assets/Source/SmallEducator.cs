@@ -36,6 +36,7 @@ public class SmallEducator : MonoBehaviour
     public Button extraResourceButton;
 
     public MultipleChoiceQuestionnaire multipleChoiceQuestionnaire;
+    private readonly List<Lesson> lessons = new List<Lesson>();
 
     private void Reset()
     {
@@ -82,7 +83,11 @@ public class SmallEducator : MonoBehaviour
         textTyper = setTextTyper(textFieldOne);
         textTyper = setTextTyper(textFieldTwo);
 
-        displayLesson(ApiConsumer.getLesson(0));
+        lessons.Add(ApiConsumer.getLesson(0));
+        foreach (var lesson in lessons)
+        {
+            displayLesson(lesson);
+        }
 
         /*/Video
 ILeafBehaviour textBehaviour = new VideoBehaviour(videoPlayer,
@@ -146,17 +151,15 @@ ILeafBehaviour textBehaviour = new VideoBehaviour(videoPlayer,
                 positionOnTimeLineSecondsTextOne = setStaticTextBehaviour(textFieldOne, backgroundTextFieldOne,
                     slide.Lines,
                     extraTextSettingsOne, timeOnScreen, positionOnTimeLineSecondsTextOne);
-                Debug.Log("Got non question slide id: " + slide.Id + " with " + slide.Lines.Count + " amount of lines");
             }
             else
             {
                 addMultipleChoiceQuestionnaire(slide.Question, positionOnTimeLineSeconds + 1.0f);
-                Debug.Log("Got question slide id: " + slide.Id);
             }
         }
     }
 
-   
+
     private void loadWeek2()
     {
         //SET informal notation (part 2.2.1)
