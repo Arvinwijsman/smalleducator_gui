@@ -1,13 +1,15 @@
+using System;
 using System.Collections.Generic;
 
 namespace Source.Models
 {
+    [Serializable]
     public class Lesson
     {
-        private int id;
-        private string title;
-        private string subtitle;
-        private List<Slide> slides = new List<Slide>();
+        public int id;
+        public string title;
+        public string subtitle;
+        public List<Slide> slides = new List<Slide>();
 
         public Lesson()
         {

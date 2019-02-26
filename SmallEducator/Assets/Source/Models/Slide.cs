@@ -1,14 +1,15 @@
-
+using System;
 using System.Collections.Generic;
 
 namespace Source.Models
 {
+    [Serializable]
     public class Slide
     {
-        private int id;
-        private List<string> lines = new List<string>();
-        private bool isQuestion;
-        private Question question;
+        public int id;
+        public List<string> lines = new List<string>();
+        public bool isQuestion;
+        public Question question = null;
 
         public Slide()
         {

@@ -1,15 +1,17 @@
 
 
+using System;
 using System.Collections.Generic;
 
 namespace Source.Models
 {
+    [Serializable]
     public class Question
     {
-        private int id;
-        private string questionTitle;
-        private List<string> answers = new List<string>();
-        private bool singleAnswer;
+        public int id;
+        public string questionTitle;
+        public List<string> answers = new List<string>();
+        public bool singleAnswer;
 
         public Question()
         {
